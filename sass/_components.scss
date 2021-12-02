@@ -11,9 +11,28 @@ header {
         font-weight: $bold;
         font-size: 1.6rem;
         line-height: 1.2;
+
+        @include respond-large {
+            align-self: flex-end;
+            font-size: 3rem;
+            max-width: 80%;
+            text-align: initial;
+        }
     }
     .header__text {
         line-height: 1.8;
+
+        @include respond-large {
+            max-width: 80%;
+            text-align: initial;
+        }
+    }
+
+    @include respond-large {
+        align-self: center;
+        height: 250px;
+        justify-content: space-evenly;
+        justify-self: flex-end;
     }
 }
 
@@ -78,6 +97,28 @@ main {
                 font-weight: $semi-bold;
                 text-decoration: none;
             }
+        }
+    }
+
+    @include respond-large {
+        margin: 50px 0;
+        min-height: 600px;
+
+        .card {
+            align-self: start;
+            width: 75%;
+        }
+        form {
+            align-self: start;
+            min-height: 500px;
+            padding: 1rem 2rem;
+            width: 75%;
+            input {
+                padding: 1.2rem 2rem;
+            }
+        }
+        .form__helper {
+            text-align: center;
         }
     }
 }
