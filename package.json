@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "node-sass sass/main.scss css/style.css"
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch",
+    "build-dist": "./node_modules/typescript/bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/habarahonaa/signup-component#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "typescript": "^4.5.2"
   }
 }

@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  gap: 20px 0px;
+  grid-template-areas:
+    "header"
+    "form";
+  height: 100vh;
+  padding: 80px 1rem;
+  width: 100%;
+  
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: form;
+  }
+
+  @include respond-large {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0px 50px;
+      grid-template-areas: "header form";
+
+    header {
+      grid-area: header;
+    }
+
+    main {
+      grid-area: form;
+    }
+  }
+}
