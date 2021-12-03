@@ -111,6 +111,37 @@ body {
       background: url("../images/bg-intro-desktop.png") #ff7a7a;
       text-align: right; } }
 
+.form__error {
+  display: block;
+  background-image: url("../images/icon-error.svg");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  border: 2px solid #ff7a7a; }
+
+.form__error::after {
+  content: "First Name cannot be empty"; }
+
+.form__valid {
+  display: block;
+  background-image: url("../images/check-solid.svg");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 1.4rem 1.4rem;
+  border: 2px solid #38cc8c; }
+
+.form__error-text {
+  color: #ff7a7a;
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic; }
+  @media (max-width: 480px) {
+    .form__error-text {
+      text-align: right;
+      margin: 10px 0 5px 0; } }
+
+.display__none {
+  display: none; }
+
 .container {
   display: grid;
   grid-auto-columns: 1fr;
@@ -119,7 +150,7 @@ body {
   gap: 20px 0px;
   grid-template-areas: "header" "form";
   height: 100vh;
-  padding: 80px 1rem;
+  padding: 80px 0.6rem;
   width: 100%; }
   .container header {
     grid-area: header; }
@@ -172,7 +203,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 500px; }
+  min-height: 520px; }
   main .card {
     align-self: center;
     border-radius: 10px;
@@ -197,7 +228,7 @@ main {
     justify-content: space-evenly;
     padding: 1rem;
     max-width: 90%;
-    min-height: 380px; }
+    min-height: 400px; }
     main form input {
       border: 1px solid #b9b6d3;
       border-radius: 5px;
@@ -216,6 +247,7 @@ main {
     main form .form__helper {
       color: #b9b6d3;
       font-size: 0.75rem;
+      font-weight: 500;
       margin: 0 auto;
       line-height: 1.6;
       width: 90%; }

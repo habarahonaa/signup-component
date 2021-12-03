@@ -11,6 +11,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -31,11 +32,15 @@
           </span> then $20/mo. thereafter
         </p>
       </div>
-      <form action="#" method="POST">
-        <input type="text" aria-label="First Name" placeholder="First Name" />
-        <input type="text" aria-label="Last Name" placeholder="Last Name" />
+      <form class="signInForm" novalidate autocomplete="off">
+        <input type="text" aria-label="First Name" placeholder="First Name" name="fname" />
+        <div class="fname__helper form__error-text display__none">First Name cannot be empty</div>
+        <input type="text" aria-label="Last Name" placeholder="Last Name" name="lname" />
+        <div class="lname__helper form__error-text display__none">Last Name cannot be empty</div>
         <input type="email" aria-label="Email Address" placeholder="Email Address" />
+        <div class="email__helper form__error-text display__none">Looks like this is not an email</div>
         <input type="password" aria-label="Password" placeholder="Password" />
+        <div class="pass__helper form__error-text display__none"></div>
         <button class="form__btn">Claim your free trial</button>
         <div class="form__helper">
           <p>
@@ -46,6 +51,7 @@
         </form>
         </main>
         </div>
+        <script type="module" src="./dist/index.js"></script>
 </body>
 
 </html>

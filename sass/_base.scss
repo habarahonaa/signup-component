@@ -54,3 +54,44 @@ body {
     text-align: right;
   }
 }
+
+// Utility classes for form validation
+
+.form__error {
+  display: block;
+  background-image: url("../images/icon-error.svg");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  border: 2px solid $primary-red;
+}
+
+.form__error::after {
+  content: "First Name cannot be empty";
+}
+
+.form__valid {
+  display: block;
+  background-image: url("../images/check-solid.svg");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 1.4rem 1.4rem;
+  border: 2px solid $primary-green;
+}
+
+.form__error-text {
+  color: $primary-red;
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+
+  @include respond-small {
+    text-align: right;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.display__none {
+  display: none;
+}
+
+

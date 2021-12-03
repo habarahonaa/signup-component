@@ -40,7 +40,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 500px;
+    min-height: 520px;
     .card {
         align-self: center;
         border-radius: 10px;
@@ -68,7 +68,7 @@ main {
         justify-content: space-evenly;
         padding: 1rem;
         max-width: 90%;
-        min-height: 380px;
+        min-height: 400px;
         input {
             border: 1px solid $grayish-blue;
             border-radius: 5px;
@@ -89,6 +89,7 @@ main {
         .form__helper {
             color: $grayish-blue;
             font-size: 0.75rem;
+            font-weight: $medium;
             margin: 0 auto;
             line-height: 1.6;
             width: 90%;
