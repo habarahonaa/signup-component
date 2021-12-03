@@ -28,8 +28,8 @@ Users should be able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/habarahonaa/signup-component)
-- Live Site URL: [Add live site URL here](https://habarahonaa.github.io/signup-component/)
+- Solution URL: [GitHub repo](https://github.com/habarahonaa/signup-component)
+- Live Site URL: [GitHub pages](https://habarahonaa.github.io/signup-component/)
 
 ## My process
 
@@ -54,9 +54,9 @@ This challenge definitely tested my layout skills so perhaps lots of my code (sp
 
 ## Author
 
-- Website - [Add your name here](https://www.habarahonaa.me)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/habarahonaa)
-- Twitter - [@yourusername](https://www.twitter.com/habarahonaa)
+- Website - [Hollman A. Barahona](https://www.habarahonaa.me)
+- Frontend Mentor - [@habarahonaa](https://www.frontendmentor.io/profile/habarahonaa)
+- Twitter - [@habarahonaa](https://www.twitter.com/habarahonaa)
 
 ## Acknowledgments
 
